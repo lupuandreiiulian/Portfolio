@@ -28,6 +28,7 @@ body{
     padding-right:30px;
     border-radius:80px;
     background-color:rgba(0, 0, 0, 0.298);
+    z-index:100;
 }
 
 .navbar > h2{
@@ -217,4 +218,68 @@ ul>li>p>a {
 
 .title{
     display:flex;
+}
+
+/* PROJECTS */
+
+#img{
+    max-width: 600px;
+    height: auto;
+    z-index: 1;
+    border-radius:5px;
+    transition:all 0.3s ease-out;
+}
+
+#img:hover{
+    max-width: 620px;
+}
+
+.projects{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    gap:100px;
+}
+
+.project1{
+    display:flex;
+}
+
+.project2{
+    display:flex;
+}
+
+.project3{
+    display:flex;
+}
+
+.box1{
+    width:400px;
+    height:200px;
+    background-color: rgba(22,34,42,1);
+    z-index:99;
+    margin-left:-50px;
+    margin-top:25%;
+    border-radius:5px;
+}
+
+.box2{
+    width:400px;
+    height:200px;
+    background-color: rgba(22,34,42,1);
+    z-index:99;
+    margin-left:-50px;
+    margin-top:25%;
+    border-radius:5px;
+}
+
+.box3{
+    width:400px;
+    height:200px;
+    background-color: rgba(22,34,42,1);
+    z-index:99;
+    margin-left:-50px;
+    margin-top:25%;
+    border-radius:5px;
 }
