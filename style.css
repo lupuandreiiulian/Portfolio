@@ -191,13 +191,13 @@ ul>li>p>a {
 .about{
     display:flex;
     flex-direction: column;
-    width:500px;
+    width:600px;
     color:white;
     font-family:Oswald;
     font-size:23px;
     justify-content:center;
     align-items:center;
-    margin:600px auto;
+    margin:500px auto;
 }
 
 .about > p{
