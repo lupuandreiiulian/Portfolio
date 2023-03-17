@@ -1,8 +1,7 @@
 html{
     box-sizing: border-box;
-    height:500%;
+    height:auto;
     scroll-behavior: smooth;
-    
 }
 
 body{
@@ -103,24 +102,6 @@ body::-webkit-scrollbar-track {
 
 .navbar >#but3:hover::after{
     width: 50%;
-    border-bottom: 3px solid #E56840;
-    transition: all 0.25s ease-out;
-}
-
-.navbar >#but4::after{
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 35%;
-    transform: translateX(-50%);
-    width: 28%;
-    border-bottom: 3px solid white;
-    transition: width 0.3s ease-in-out;
-    padding-right:70px;
-}
-
-.navbar >#but4:hover::after{
-    width: 48%;
     border-bottom: 3px solid #E56840;
     transition: all 0.25s ease-out;
 }
@@ -259,20 +240,24 @@ ul>li>p>a {
 .about{
     display:flex;
     flex-direction: column;
-    width:600px;
+    width: max(50px, 70vw);;
     color:white;
     font-family:Oswald;
     font-size:23px;
     justify-content:center;
     align-items:center;
     margin:500px auto;
+    flex-wrap: wrap;
 }
 
 .about > p{
     margin-top:30px;
     display:flex;
-    flex-wrap: wrap;
     max-width:100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    align-items:center;
+    justify-content: center;
 }
 
 .lineAM{
@@ -309,6 +294,7 @@ ul>li>p>a {
     gap:100px;
     color:rgb(138, 138, 138);
     font-family:Oswald;
+    margin-bottom:100px;
 }
 
 .box1{
@@ -352,11 +338,9 @@ ul>li>p>a {
 #desc1{
     margin-top:10px;
 }
-
-.navbar2{
+.dropdown > h2{
     display:none;
 }
-
 @media screen and (max-width: 1040px) {
     .box1 {
         background-color:rgba(22, 34, 42, 0.459);
@@ -385,4 +369,27 @@ ul>li>p>a {
     #email{
         display:none;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .title{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .lineAM{
+        width:250%;
+        align-items: center;
+        margin-left:-85px;
+        transition:margin-left 0.5s ease-in-out;
+    }
+    .navbar>h2{
+        display:none;
+    }
+    .menuRES>.lineMenu{
+        width:50px;
+        height:5px;
+        background-color: #ffffff;
+    } 
+    
 }
