@@ -342,7 +342,7 @@ ul>li>p>a {
     width: 500px;
     height: 100%;
     z-index: 101;
-    background: rgba(22,34,42,1);
+    background: rgb(34, 47, 56);
     left:calc(200% - 200px);
     padding-top:200px;
     padding-left:50px;
