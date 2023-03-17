@@ -9,3 +9,13 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+
+function navbar(){
+    document.querySelector(".navbar2").style.left = "calc(100% - 200px)";
+    document.querySelector(".navbar2").style.transition = "left 0.4s ease-in-out";
+}
+
+function goBack(){
+    document.querySelector(".navbar2").style.left = "calc(200% - 200px)";
+    document.querySelector(".navbar2").style.transition = "left 0.4s ease-in-out";
+}
