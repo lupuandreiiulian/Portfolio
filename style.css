@@ -378,7 +378,6 @@ ul>li>p>a {
     font-size:1.1em;
     font-weight:500;
     transition:.3s;
-    border:2px solid;
 }
 .navbar2>button:hover{
     background-color:#fff;
@@ -442,7 +441,7 @@ ul>li>p>a {
     }
     .navbar>button{
         display:block;
-        margin:20px 80px 20px 0;
+        margin:20px 30px 20px 0;
         font-family:Oswald;
         font-size:20px;
         width:130px;
